@@ -6,17 +6,17 @@
     <div class="col-md-12">
     <div class="card">
         <div class="card-header">
-            <div class="card-title">Add a New Category</div>
+            <div class="card-title">Add New Category</div>
         </div>
         <div class="card-body">
             @if (session()->has('success'))
             <div class="alert alert-success">{{session()->get('success') }}</div>
             @endif
-            <form action="{{ route('category.store') }}" method="post" >
+            <form action="{{ route('category.update', $category->id) }}" method="post" >
         @csrf
         <div class="form-group">
             <label for="">Name</label> <br>
-            <input type="text" class="form-controll" name="name" placeholder ="Category name"  >
+            <input type="text" class="form-controll" value="{{ $category->name }}" name="name" placeholder ="Category name"  >
         </div>
         <button type= "submit" class="btn btn-sm mt-2 btn-primary">Save</button>
             </form>

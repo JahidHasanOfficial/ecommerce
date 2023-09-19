@@ -27,8 +27,8 @@
         </a>
         <div class="collapse" id="subcategory" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
             <nav class="sb-sidenav-menu-nested nav">
-                <a class="nav-link" href="{{ route('category.add') }}">Add SubCategory</a>
-                <a class="nav-link" href="{{ route('category.manage') }}">Manage SubCategory</a>
+                <a class="nav-link" href="{{ route('subcategory.add') }}">Add SubCategory</a>
+                <a class="nav-link" href="{{ route('subcategory.manage') }}">Manage SubCategory</a>
             </nav>
         </div>
 
@@ -40,8 +40,8 @@
         </a>
         <div class="collapse" id="product" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
             <nav class="sb-sidenav-menu-nested nav">
-                <a class="nav-link" href="{{ route('category.add') }}">Add Product</a>
-                <a class="nav-link" href="{{ route('category.manage') }}">Manage Product</a>
+                <a class="nav-link" href="{{ route('product.add') }}">Add Product</a>
+                <a class="nav-link" href="{{ route('product.manage') }}">Manage Product</a>
             </nav>
         </div>
         

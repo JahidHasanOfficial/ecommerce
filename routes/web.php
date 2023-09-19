@@ -38,7 +38,9 @@ Route::middleware([
 
   ///  Subcategory route list---
   Route::get('/subcategory/add',[SubcategoryController::class, 'subcategoryAddForm'])->name('subcategory.add');
- Route::get('/subcategory/manage',[SubcategoryController::class, 'subcategoryManageForm'])->name('subcategory.manage');
+ Route::get('/subcategory/manage',[SubcategoryController::class, 'subcategoryManage'])->name('subcategory.manage');
+ Route::post('/subcategory/store',[SubcategoryController::class, 'subcategoryStore'])->name('subcategory.store');
+
 
  //product route list-----
  Route::get('/product/add',[ProductController::class, 'productAddForm'])->name('product.add');

@@ -16,7 +16,7 @@ class CategoryController extends Controller
 
     public function categoryManage()
     {
-        $categories =Category::orderBy('id','desc')->get();
+        $categories = Category::orderBy('id','desc')->get();
         return view('backend.category.manage', compact('categories'));
     }
     public function categoryStore(Request $request)

@@ -7,13 +7,13 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Dashboard Admin</title>
-        @include ('backend.includes.style')
+        @include('backend.includes.style')
     </head>
     <body class="sb-nav-fixed">
-      @include ('backend.includes.header')
+      @include('backend.includes.header')
         <div id="layoutSidenav">
             <div id="layoutSidenav_nav">
-              @include ('backend.includes.sidebar')
+              @include('backend.includes.sidebar')
             </div>
             <div id="layoutSidenav_content">
               @yield ('content')
@@ -31,6 +31,6 @@
                 </footer>
             </div>
         </div>
-       @include ('backend.includes.script')
+       @include('backend.includes.script')
     </body>
 </html>
