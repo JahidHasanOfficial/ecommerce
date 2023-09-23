@@ -32,6 +32,7 @@ class SubcategoryController extends Controller
    public function subcategoryManage()
    {
     $subcategories = Subcategory::with('category')->orderBy('id','desc')->get();
+
          return view('backend.subcategory.manage', compact('subcategories'));
    }
  }

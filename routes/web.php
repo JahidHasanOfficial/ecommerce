@@ -44,7 +44,8 @@ Route::middleware([
 
  //product route list-----
  Route::get('/product/add',[ProductController::class, 'productAddForm'])->name('product.add');
-    Route::get('/product/manage',[ProductControllerr::class, 'productManageForm'])->name('product.manage');
+ Route::get('/product/manage',[ProductController::class, 'productManage'])->name('product.manage');
+ Route::post('/product/store',[ProductController::class, 'productStore'])->name('product.store');
  
 
 });

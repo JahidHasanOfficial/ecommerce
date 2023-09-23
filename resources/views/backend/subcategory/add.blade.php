@@ -18,7 +18,7 @@
         @csrf
         <div class="form-group">
             <label for="">Categorey Name</label> <br>
-          <select class="form-controll" name="category_id">
+          <select class="form-control" name="category_id">
             <option selected disabled>Select A Category</option>
             @foreach ($categories as $category)
             <option value="{{ $category->id }}">{{$category->name}}</option>
@@ -29,7 +29,7 @@
         </div>
         <div class="form-group">
             <label for="">Name</label> <br>
-            <input type="text" class="form-controll" name="name" placeholder ="Category name"  >
+            <input type="text" class="form-control" name="name" placeholder ="Category name"  >
         </div>
         <button type= "submit" class="btn btn-sm mt-2 btn-primary">Save</button>
             </form>
